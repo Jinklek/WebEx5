@@ -24,6 +24,7 @@
                     <li><a href="#links">Ссылки</a></li>
                     <li><a href="#table">Таблица</a></li>
                     <li><a href="#form">Формы</a></li>
+                    <li><a href="#calculator">Калькулятор</a></li>
                 </ul>
             </nav>
 
@@ -177,6 +178,36 @@
             <input type="submit" value="Сохранить">
         </form>
     </section>
+
+        <section id="calculator" class="col-12 p-3">
+            <h2>Калькулятор стоимости заказа</h2>
+
+            <form id="calculator-form">
+                <label for="product">Выберите товар:</label><br>
+
+                <select id="product">
+                    <option value="100">Тетрадь — 100 руб.</option>
+                    <option value="50">Ручка — 50 руб.</option>
+                    <option value="500">Книга — 500 руб.</option>
+                </select>
+
+                <br><br>
+
+                <label for="quantity">Количество товара:</label><br>
+
+                <input
+                        type="text"
+                        id="quantity"
+                        placeholder="Введите количество"
+                >
+
+                <br><br>
+
+                <button type="submit">Рассчитать стоимость</button>
+            </form>
+            <br>
+            <p id="message"></p>
+        </section>
     </div>
 </main>
 
@@ -185,5 +216,7 @@
         <p>(с) Руслан Хорьков</p>
     </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
